@@ -1,13 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+}
+.app-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #b1d9db;
+  height: 100vh;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-text {
+  position: relative;
+  /* top: 100px; */
+  left: 50px;
+  padding: 4rem 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.app-text p {
+  width: 70%;
+  margin: 0;
+}
+
+.app-text img {
+  position: relative;
+  top: -40px;
+  left: 90px;
+  width: 90%;
+  transform: rotate(-6deg);
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+  color: #bdbdbd;
+  margin: 2rem 0;
+}
+
+.form-area {
+  background-color: #fff;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 4rem 12rem;
+  width: 60vw;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.link {
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.form-area input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.form-area button {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background-color: #7cd2d7;
+  color: #fff;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.form-area button:hover {
+  background-color: #62bcc1;
+}
+
+.success-block {
+  color: #7cd2d7;
+  text-align: center;
+}
+.error-block {
+  color: #f01b1b;
+  text-align: center;
 }
